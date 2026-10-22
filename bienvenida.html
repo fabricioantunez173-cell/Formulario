@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bienvenido a Spider-Verse Archives. Tu enlace a la Red de la Vida y el Destino está activo.">
+  <meta name="theme-color" content="#12131a">
+  <title>Bienvenida | Spider-Verse Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="verificarAccesoBienvenida()">
+  <header class="cabecera">
+    <a class="marca" href="bienvenida.html" aria-label="Spider-Verse Archives, ir a bienvenida">
+      <img class="marca__emblema" src="images/858979246_1108248881610722_8147942910550156116_n.png" alt="">
+      <span class="marca__nombre">Spider-Verse Archives</span>
+    </a>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a class="navegacion__enlace navegacion__enlace--activo" href="bienvenida.html" aria-current="page">Bienvenida</a>
+      <a class="navegacion__enlace" href="index.html">Acceso / registro</a>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <section class="zona-bienvenida" aria-labelledby="titulo-bienvenida">
+      <article class="panel panel--bienvenida">
+        <p class="panel__volumen">Vol. 01 // Autorizado</p>
+        <figure class="emblema" aria-label="Emblema de Spider-Verse Archives">
+          <img class="emblema__imagen" src="images/858979246_1108248881610722_8147942910550156116_n.png" alt="">
+        </figure>
+        <p class="etiqueta">Conexión multiversal establecida</p>
+        <h1 class="titulo" id="titulo-bienvenida">¡Bienvenido al <span class="titulo__acento">Spider-Verse!</span></h1>
+        <p class="descripcion">Tu enlace dimensional a la Red de la Vida y el Destino ha sido verificado con éxito. Todos los registros multiversales están sincronizados.</p>
+
+        <div class="separador" aria-hidden="true"><span></span></div>
+
+        <a class="boton boton--principal" href="index.html" onclick="registrarSalida()">Salir</a>
+        <p class="estado-sesion"><span class="indicador" aria-hidden="true"></span>Sesión activa // Nodo Tierra-616</p>
+      </article>
+
+      <p class="referencia"><span>Ref: SV-Archive-P02</span><span>Fin del comunicado</span></p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p class="pie__estado"><span class="indicador" aria-hidden="true"></span>Multiverse Dispatch // Protocol Earth-616</p>
+    <p class="pie__derechos">© 2025 Spider-Verse Archives. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
